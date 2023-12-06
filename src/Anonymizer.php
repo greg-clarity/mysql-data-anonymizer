@@ -6,6 +6,7 @@ use Amp;
 use Amp\Promise;
 use Amp\Mysql;
 use Exception;
+use Faker\Factory;
 use Globalis\MysqlDataAnonymizer\Helpers;
 
 class Anonymizer

@@ -11,7 +11,7 @@ $anonymizer->table('users', function ($table) {
     // Specify a primary key of the table. An array should be passed in for composite key.
     $table->primary('id');
 
-    // Add a global filter to the queries.
+    // Set a global filter to the queries.
     // Only string is accepted so you need to write down the comlete WHERE statement here.
     $table->globalWhere('email4 != email5 AND id != 10');
 

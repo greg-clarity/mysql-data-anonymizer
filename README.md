@@ -3,10 +3,10 @@
 MySQL Data Anonymizer is a PHP library that anonymize your data in the database.
 Always use the production database to test your programs, but worry about leaking cutomer data?
 MySQL Data Anonymizer is the right tool for you. This tool helps you replace all sensitive data with fake data.
-Fake data is provided by a [fzaninotto/Faker](https://github.com/fzaninotto/Faker) generator by default, but you can also use your own generator.
+Fake data is provided by a [fakerphp/faker](https://github.com/FakerPHP/Faker) generator by default, but you can also use your own generator.
 To improve the performance, [AMP/MySQL](https://github.com/amphp/mysql) is used to create multiple MySQL connections concurrently.
 
-MySQL Data Anonymizer requires PHP >= 7.2.
+MySQL Data Anonymizer requires PHP >= 8.1.
 
 # Table of Contents
 
@@ -55,7 +55,7 @@ $anonymizer->table('users', function ($table) {
     // Specify a primary key of the table. An array should be passed in for composite key.
     $table->primary('id');
 
-    // Add a global filter to the queries.
+    // Set a global filter to the queries.
     // Only string is accepted so you need to write down the complete WHERE statement here.
     $table->globalWhere('email4 != email5 AND id != 10');
 

@@ -13,3 +13,6 @@
 
 !/src/helpers/GeneralHelper.php
 !/src/providers/.gitkeep
+
+/.idea
+*~

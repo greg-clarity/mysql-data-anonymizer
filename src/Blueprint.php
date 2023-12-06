@@ -131,7 +131,7 @@ class Blueprint
      */
     public function globalWhere($rawSql)
     {
-        $this->globalWhere[] = $rawSql;
+        $this->globalWhere = $rawSql;
 
         return $this;
     }

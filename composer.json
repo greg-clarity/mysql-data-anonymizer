@@ -1,5 +1,5 @@
 {
-	"name": "globalis/mySQL-data-anonymizer",
+    "name": "globalis/mysql-data-anonymizer",
     "description": "Anonymize sensitive datas in test database",
     "type": "library",
     "authors": [
@@ -9,9 +9,9 @@
         }
     ],
     "require": {
-    	"php": ">=7.2",
-        "amphp/mysql": "^1.1",
-        "fzaninotto/faker": "^1.8"
+    	"php": ">=8.1",
+        "amphp/mysql": "^2.1",
+        "fakerphp/faker": "^1.5"
     },
     "autoload": {
         "psr-4": { "Globalis\\MysqlDataAnonymizer\\": "src/" }
