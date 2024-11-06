@@ -91,7 +91,7 @@ class Anonymizer
                 }
             }
 
-            if (!filter_var($this->config['DB_HOST'], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
+            if (!filter_var($this->config['DB_HOST'], FILTER_VALIDATE_DOMAIN) && !filter_var($this->config['DB_HOST'], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
                 throw new Exception('DB_HOST is not valid.');
             }
         } catch (Exception $e) {
